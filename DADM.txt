@@ -1,0 +1,203 @@
+Flatfiles
+-----------
+
+Data Redundancy
+Breach of Security
+Unstructured
+Linear Search
+Non Concurrent operations
+CRUD operations take time
+
+OLTP
+--------
+
+DataBases --> 
+
+DBMS --> Hirarchical db's, Networking DB's, RDBMS
+
+RDBMS
+-----------
+
+Pre-defined structure
+Concurrent operations
+Data redundancy is avoided
+
+ACID properties
+---------------------
+
+Atomicity --> 
+Consistency --> 
+Isolation --> 
+Durability --> 
+
+Data Model --> Designing the basic functionality and structure of the data
+ER Diagram --> Pictorial representation of the data model 
+Cardinality --> Degree of relationship
+
+Constraints
+----------------
+
+Keys --> 
+
+Primary --> Unique, Not Null
+Candidate Key --> Combination of more than one key to identify unique records 
+Referential integrity(Foreign Keys) -->
+Alternate Keys --> All the keys other than Primary keys
+
+Not null
+default
+Unique
+Check
+
+
+OLAP
+-------
+
+Analytics --> Fetch data in columns rather than rows
+Data warehousing [ETL]
+
+Data from different sources are extracted, transformed into specific form(removing anamolies and unnecessary information) and loading it into 
+Warehouse for analysis and produce reports & dashboards in BI tools.
+
+BI tools --> Power BI, Qlikview, Tableau, Cognos, Lookr
+
+NOSQL
+----------
+
+Schema on read
+Unstructured
+Horizontal scaling is easy
+
+Columnar DB's --> Cassandra, Hbase
+Document db's --> Mongodb
+Key-value pairs, graphs
+
+Data Lakes
+--------------
+Data storage repository
+
+
+1990's --> www / dotnet , personal computers
+
+Evolution of Digital era
+-------------------------------
+
+Big Data Challenges
+---------------------------
+
+By collecting, storing, managing and analysing Big Data, business can have better understanding and build data driven decision making systems
+
+Volume --> Cost of storage [RDBMS --> Licensed, high end costly servers] --> Pre-mature death of data
+
+Velocity --> Speed of data generation
+
+Variety --> Unstructured data
+
+Hadoop  --> Written in Java
+----------- 
+
+HDFS --> Storage layer
+------------------------------
+
+Name node (Master) --> Allocate the data nodes for storing blocks and replications
+Data Node (Slave) --> Allow storage of blocks and replications
+
+hadoop fs  -put /source_path /destination_path
+
+fs (Client) takes the request from the user
+fs devides the data into blocks of max 128 mb
+
+Master (Name node) --> Takes the request from the FS, prepares a list of data nodes(slave machines) to store the data in blocks in parallel
+
+The blocks are then devided into replications (3 by default) and written serially
+
+300 mb file
+b1r1,b1r2,b1r3
+b2r1,b2r2,b2r3
+b3r1,b3r2,b3r3
+
+Rack Awareness
+----------------------
+High-availability --> Auto back-up
+Federation --> Setting up multiple name nodes for data
+
+Map-reduce  --> Processing layer  --> Parallel processing framework
+-----------------
+ Map class   --> Business Logic 
+ Reduce Class --> Aggregation Logic
+
+ Print the names of employees getting > 10k salary?
+ Print the count of employees getting > 10k salary?
+
+Hive --> Warehousing solution
+------
+Stores the metadata in a local db called metastore/derby
+
+
+Cloud --> rent Infrastructure and pay as you go.
+
+Cloud based managed services --> Storage, DBMS, Warehousing, ML, Pipeline, AI
+
+Data Lifecycle
+-------------------
+
+Data Engineering --> Collection, storage, management & processing of data [RDBMS, Excel, DWH, Cloud]
+
+Data Analysis --> EDA (summarising/profiling), data cleaning [Python, R, Excel, SAS]
+
+Data Visualisation  / BI  --> Presentations, reports, charts, Dashboards [Power BI, Tableau, Qlikview]
+
+Advanced Analytics --> Machine learning / Deep learning models
+
+
+SQL Server on Azure
+----------------------------
+
+Managed RDBMS service by Microsoft
+
+Availability, data safety, Built-in intelligence, Advanced security & compliance, Monitoring capacities
+
+
+Managed Instance
+
+Single db
+
+Elastic pool
+
+Data types
+---------------
+bit, tinyint, int, bigint, numeric, decimal --> Exact Numeric 
+Read, float --> Approximate
+Date & time --> date, datetime
+Character --> Char & varchar
+
+1. CRUD
+2. Enforcing & violation of Constraints
+Not null
+Keys
+Check
+Default
+Identity
+
+3. Sele
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
